@@ -12,11 +12,11 @@ const localTime = moment.unix(time).format('dddd, MMMM Do, YYYY h:mm:ss A')
   acc = `${acc}\n Title: ${title}\n Author: ${by}\n Time: ${localTime}\n Link: ${url}\n\n`
   return acc
 },'')
-
+const {emailAddress} = process.env
 
 const eParams = {
   Destination: {
-      ToAddresses: ["daniel.wasserlauf@gmail.com"]
+      ToAddresses: [`${emailAddress}`]
   },
   Message: {
       Body: {
@@ -28,7 +28,7 @@ const eParams = {
           Data: "Todays job postings on hacker news"
       }
   },
-  Source: "daniel.wasserlauf@gmail.com"
+  Source: `${emailAddress}`
 };
 
 console.log('===SENDING EMAIL===');
