@@ -2,7 +2,7 @@
 const {firebaseQuery} = require('./firebaseQuery')
 const AWS = require('aws-sdk')
 const moment = require('moment')
-module.exports.hackernews =  async () => {
+module.exports.emailService =  async () => {
   
 const ses = new AWS.SES();
 const arrayOfJobPostings = await firebaseQuery()

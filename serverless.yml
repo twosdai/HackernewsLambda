@@ -35,8 +35,8 @@ provider:
 
 
 functions:
-  hackernews:
-    handler: src/handler.hackernews
+  emailService:
+    handler: src/handler.emailService
     events:
         - schedule: cron(0 12 * * ? *)
     environment:
