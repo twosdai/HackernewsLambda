@@ -40,4 +40,4 @@ functions:
     events:
         - schedule: cron(0 12 * * ? *)
     environment:
-      emailAddress: 'daniel.wasserlauf@gmail.com'
+      emailAddress: ''
