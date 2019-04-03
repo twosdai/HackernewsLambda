@@ -4,7 +4,7 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Daniel Wasserlauf",
   "license": "MIT",
@@ -14,5 +14,8 @@
     "firebase-admin": "^7.1.1",
     "moment": "^2.24.0",
     "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2"
   }
 }
