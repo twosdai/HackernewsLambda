@@ -1,5 +1,5 @@
 # HackernewsLambda
-A lambda deployed with serverless which emails yourself the job postings on hackernews
+A lambda deployed with serverless to email yourself daily with the job postings on hackernews
 
 
 # How to run
